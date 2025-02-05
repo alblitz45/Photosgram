@@ -1,18 +1,33 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Feed</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
+
+  <div class="stories-container">
+    <div class="stories">
+      
+      <div class="story">
+        <div class="add-story">
+          <div class="add-icon">+</div>
+        </div>
+        <p>Tu historia</p>
+      </div>
+
+      <div class="story" *ngFor="let story of stories">
+        <img [src]="story.image" alt="Historia de {{ story.name }}" />
+        <p>{{ story.name }}</p>
+      </div>
+
+    </div>
+  </div>
 
   <app-layout>
     <ion-list>
-      <app-card-post></app-card-post>
-      <app-card-post></app-card-post>
-      <app-card-post></app-card-post>
-      <app-card-post></app-card-post>
-      <app-card-post></app-card-post>
+      <app-card-post *ngFor="let post of posts" [post]="post">
+        <div class="interaction-icons">
+          <ion-icon name="heart-outline" color="danger"></ion-icon> 
+          <ion-icon name="chatbubble-outline" color="medium"></ion-icon> 
+          <ion-icon name="share-social-outline" color="tertiary"></ion-icon>
+        </div>
+      </app-card-post>
     </ion-list>
   </app-layout>
+
 </ion-content>

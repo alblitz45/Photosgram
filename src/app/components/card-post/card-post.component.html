@@ -1,11 +1,10 @@
 <ion-card>
-  <img alt="Silhouette of mountains" src="https://24ai.tech/es/wp-content/uploads/sites/5/2023/10/01_product_1_sdelat-kvadratnym-3.jpg" />
+  <img [src]="post.image" alt="Imagen del post" />
   <ion-card-header>
-    <ion-card-title>Card Title</ion-card-title>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    <ion-card-title>{{ post.title }}</ion-card-title>
+    <ion-card-subtitle>{{ post.subtitle }}</ion-card-subtitle>
   </ion-card-header>
-
   <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
+    {{ post.content }}
   </ion-card-content>
 </ion-card>

@@ -1,0 +1,124 @@
+.stories-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  .stories {
+    display: flex;
+    padding-bottom: 10px;
+  }
+  
+  .story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .story:hover {
+    transform: scale(1.05);
+  }
+  
+  .story img,
+  .add-story {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #ff3b5c;
+    padding: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .story p {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+    color: #f5f5f5;
+  }
+  
+  .add-story {
+    background: #333;
+    position: relative;
+  }
+  
+  .add-story:hover {
+    border-color: #007bff;
+  }
+  
+  .add-icon {
+    width: 24px;
+    height: 24px;
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  ion-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #1a1a1a;
+    margin-bottom: 15px;
+  }
+  
+  ion-card-header {
+    padding: 10px;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ion-card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f5f5f5;
+  }
+  
+  ion-card-subtitle {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  ion-card-content {
+    padding: 10px;
+    color: #f5f5f5;
+  }
+  
+  ion-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #333;
+  }
+  
+  .interaction-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-top: 1px solid #333;
+  }
+  
+  ion-icon {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  ion-icon:hover {
+    color: #007bff;
+  }
+  
